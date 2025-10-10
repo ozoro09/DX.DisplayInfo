@@ -1,0 +1,75 @@
+# Delphi compiler-generated files
+*.dcu
+*.exe
+*.dll
+*.bpl
+*.bpi
+*.dcp
+*.so
+*.apk
+*.drc
+*.map
+*.dres
+*.rsm
+*.tds
+*.dcu
+*.lib
+*.a
+*.o
+*.ocx
+
+# Delphi autosave files
+*.~*
+*.local
+*.identcache
+*.projdata
+*.tvsconfig
+*.dsk
+*.tmp
+
+# Delphi local files
+__history/
+__recovery/
+
+# Build output directories
+Win32/
+Win64/
+OSX32/
+OSX64/
+OSXARM64/
+Linux64/
+Android/
+Android64/
+iOSDevice64/
+iOSSimARM64/
+
+# IDE files
+*.stat
+ModelSupport/
+*.deployproj
+
+# Backup files
+*.bak
+*~
+
+# Log files
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
+
