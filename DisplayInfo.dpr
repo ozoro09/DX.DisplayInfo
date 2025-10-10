@@ -1,6 +1,7 @@
 ﻿program DisplayInfo;
 
 {$APPTYPE CONSOLE}
+{$R *.res}
 
 uses
   Winapi.Windows,
